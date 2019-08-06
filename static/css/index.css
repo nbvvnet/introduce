@@ -1,0 +1,444 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+*,
+a {
+	text-decoration: none
+}
+
+a {
+	color: #fff
+}
+
+img {
+	vertical-align: middle
+}
+
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+@media screen and (max-width:1200px) {
+	html {
+		font-size: 100px !important
+	}
+
+	body,
+	html {
+		background: #22262d
+	}
+
+	body {
+		font-size: .14rem !important
+	}
+
+	#app,
+	body {
+		color: #fff
+	}
+
+	.header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 0 .2rem;
+		line-height: .44rem;
+		height: .44rem;
+		font-size: .14rem;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		position: relative
+	}
+
+	.header .logo-img {
+		height: .22rem
+	}
+
+	.header:after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: .02rem;
+		background: -webkit-gradient(linear, left top, right top, from(#0fa), color-stop(#0868ff), color-stop(#ff3b7b), to(#ff7003));
+		background: linear-gradient(90deg, #0fa, #0868ff, #ff3b7b, #ff7003);
+		content: "";
+		bottom: -.02rem
+	}
+
+	.header .balance img {
+		width: .09rem;
+		height: .13rem;
+		margin: -.02rem .02rem 0 0
+	}
+
+	.list-content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: .2rem
+	}
+
+	.list-content .list-item {
+		margin-bottom: .15rem;
+		text-align: center;
+		display: block;
+		background: #1c1f24;
+		padding: .15rem;
+		border-radius: .06rem
+	}
+
+	.list-content .list-item:first-child {
+		background: -webkit-gradient(linear, left top, left bottom, from(#161924), color-stop(50%, rgba(22, 25, 36, .1)), to(#542380));
+		background: linear-gradient(180deg, #161924 0, rgba(22, 25, 36, .1) 50%, #542380)
+	}
+
+	.list-content .list-item:nth-child(2) {
+		background: -webkit-gradient(linear, left top, left bottom, from(#161924), color-stop(50%, rgba(22, 25, 36, .1)), to(#ff3b3b));
+		background: linear-gradient(180deg, #161924 0, rgba(22, 25, 36, .1) 50%, #ff3b3b)
+	}
+
+	.list-content .list-item:nth-child(3) {
+		background: -webkit-gradient(linear, left top, left bottom, from(#161924), color-stop(50%, rgba(22, 25, 36, .1)), to(#acf92d));
+		background: linear-gradient(180deg, #161924 0, rgba(22, 25, 36, .1) 50%, #acf92d)
+	}
+
+	.list-content .list-item:nth-child(3) .list-item-img {
+		margin-left: -.2rem
+	}
+
+	.list-content .list-item .list-title {
+		line-height: .22rem;
+		font-size: .16rem;
+		padding-top: .15rem
+	}
+
+	.list-content .list-item .list-item-img {
+		width: .6rem;
+		height: .6rem
+	}
+
+	.list-content .list-item .play-btn {
+		text-align: left;
+		font-size: .12rem
+	}
+
+	.text-content {
+		color: #596591;
+		margin: .6rem auto .4rem;
+		text-align: center
+	}
+
+	.text-content div {
+		margin-bottom: .15rem
+	}
+
+	.footer {
+		color: #596591;
+		text-align: center;
+		padding-bottom: .5rem;
+		line-height: .2rem
+	}
+
+	.footer img {
+		width: .4rem;
+		margin-bottom: .15rem
+	}
+
+	.footer div {
+		padding-bottom: .15rem
+	}
+}
+
+html {
+	font-size: 14px;
+	background: #0c0c0c url(../../static/img/bg.gif) repeat 0 0;
+	text-align: center;
+	overflow-x: hidden
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto
+}
+
+header {
+	padding: 0 60px;
+	line-height: 60px;
+	background: linear-gradient(76deg, rgba(28, 33, 39, .5), rgba(21, 24, 36, .5));
+	text-align: left
+}
+
+header .logo {
+	height: 30px;
+	margin-right: 60px
+}
+
+header a {
+	color: #a4a4a4;
+	font-size: 16px;
+	margin-right: 40px
+}
+
+.main-container {
+	margin-top: 85px;
+	position: relative
+}
+
+.main-container .title {
+	font-size: 34px;
+	color: #fff;
+	text-align: center;
+}
+
+.main-container .small-title {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center
+}
+
+.main-container .game-content {
+	margin: 80px auto 0;
+	position: relative
+}
+
+.main-container .game-content .content-bg {
+	position: absolute;
+	left: -50px;
+	top: 60px;
+	width: 800px;
+	z-index: -1
+}
+
+.main-container .game-content .content-bg-right {
+	right: -50px;
+	left: auto
+}
+
+.main-container .game-content .game-list {
+	overflow: hidden
+}
+
+.main-container .game-content .game-list li {
+	float: left;
+	padding: 30px;
+	width: 33.33%
+}
+
+.main-container .game-content .game-list li>a {
+	display: block;
+	cursor: pointer
+}
+
+.main-container .game-content .game-list li .item-title {
+	color: #fff;
+	font-size: 24px
+}
+
+.main-container .game-content .game-list li .game-img-content {
+	position: relative;
+	height: 363px;
+	overflow: hidden
+}
+
+.main-container .game-content .game-list li .game-img-content .linear-bg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0
+}
+
+.main-container .game-content .game-list li .game-img {
+	width: 100%;
+	margin-top: -40px;
+	-webkit-transition: all .5s;
+	transition: all .5s
+}
+
+.main-container .game-content .game-list li .game-img-content:hover .game-img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2)
+}
+
+.game-content .game-list li .game-logo-container {
+	height: 175px;
+	background: url(../../static/img/game-bg1.png) no-repeat 50%;
+	background-size: 100% 100%
+}
+
+.game-content .game-list li:nth-child(2) .game-logo-container {
+	background-image: url(../../static/img/game-bg2.png)
+}
+
+.game-content .game-list li:nth-child(3) .game-logo-container {
+	background-image: url(../../static/img/game-bg3.png)
+}
+
+.game-content .game-list .game-logo-container .game-logo {
+	width: 75px;
+	height: 75px;
+	margin-top: 50px
+}
+
+.main-container .game-content .game-list li .play-btn {
+	background: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 5px 2px #fff;
+	box-shadow: 0 0 5px 2px #fff;
+	margin: 20px 2px;
+	line-height: 40px;
+	display: block;
+	color: #333;
+	-webkit-transition: all .3s;
+	transition: all .3s
+}
+
+.main-container .game-content .game-list li .play-btn:hover {
+	-webkit-box-shadow: 0 0 20px 2px #fff;
+	box-shadow: 0 0 20px 2px #fff
+}
+
+.main-container .game-info-list {
+	overflow: hidden;
+	background: url(../../static/img/game-info-bg.png) no-repeat 50%;
+	background-size: 100% 100%;
+	color: #a7b9ff;
+	margin: 10px 30px 0
+}
+
+.main-container .game-info-list li {
+	float: left;
+	padding: 80px 50px 40px;
+	width: 33.33%;
+	line-height: 26px
+}
+
+.main-container .line-img-list {
+	overflow: hidden;
+	margin-top: 10px
+}
+
+.main-container .line-img-list li {
+	float: left;
+	width: 33.33%
+}
+
+.main-container .line-img-list li img {
+	width: 220px
+}
+
+footer {
+	background: linear-gradient(76deg, rgba(28, 33, 39, .5), rgba(21, 24, 36, .5));
+	color: #596591;
+	padding: 15px;
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 24px
+}
+.reward-middle .money {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	right: 0px;
+}
+
+.reward-middle .money .circle-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.reward-middle .money .circle-bg.circle-bg1 {
+	width: 90%;
+	height: 90%;
+	margin-top: 5%;
+	margin-left: 5%;
+	transform: rotate(0);
+	animation: rotate1 30s linear infinite
+}
+
+.reward-middle .money .circle-bg.circle-bg2 {
+	animation: rotate2 30s linear infinite
+}
+
+@keyframes rotate1 {
+	0% {
+		transform: rotate(0)
+	}
+
+	to {
+		transform: rotate(1turn)
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0)
+	}
+
+	to {
+		transform: rotate(-1turn)
+	}
+}
+
+.reward-middle .money .money-flex {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.reward-middle .money .money-flex div {
+	font-size: .15rem
+}
+
+.reward-middle .money .money-flex h3 {
+	font-size: .26rem;
+	color: #b0ff2e
+}
+
+.reward-middle {
+	height: 208px;
+	width: 208px;
+	display: inline-block;
+	right: 15px;
+	top: 15px;
+	position: absolute;
+}
+
+
+
+.reward-middle>img {
+	width: 1.2rem;
+	margin-right: -.1rem
+}
+
+.reward-middle>img.img-right {
+	margin: 0 0 0 -.1rem
+}
+
+.reward-number{
+	font-size: 25px;
+}
