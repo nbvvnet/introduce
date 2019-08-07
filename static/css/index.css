@@ -440,5 +440,14 @@ footer {
 }
 
 .reward-number{
-	font-size: 25px;
+	font-size: 40px;
+	font-family: clock;
+}
+
+@font-face {
+
+font-family: 'clock';
+
+src: url('../font/font.TTF');
+
 }
