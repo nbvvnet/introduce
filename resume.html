@@ -225,8 +225,11 @@
 					function setTime()
 					{
 						var nowDate = new Date();
-						document.getElementById("timer").innerHTML = nowDate.getHours() + ":" + nowDate.getMinutes() + ":" 
-															+ (nowDate.getSeconds() < 10 ? "0" + nowDate.getSeconds(): nowDate.getSeconds());
+						document.getElementById("timer").innerHTML = 	(nowDate.getHours() < 10 ? "0" + nowDate.getHours(): nowDate.getHours()) 
+																		+ ":"
+																		+ (nowDate.getMinutes() < 10 ? "0" + nowDate.getMinutes(): nowDate.getMinutes()) 
+																		+ ":" 
+																		+ (nowDate.getSeconds() < 10 ? "0" + nowDate.getSeconds(): nowDate.getSeconds());
 					}
 					setTime();
 				}
